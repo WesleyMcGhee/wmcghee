@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <style>
+    .topo-line {
+      fill: none;
+      stroke: #334155; /* Default slate-700, easily overrideable with CSS */
+      stroke-width: 1.5;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      opacity: 0.8;
+    }
+    .index-line {
+      stroke-width: 2.5; /* Emphasized accent lines */
+      opacity: 0.95;
+    }
+    /* Optional pulse animation if you want to activate it via class */
+    @keyframes pulse {
+      0% { opacity: 0.6; }
+      50% { opacity: 0.9; }
+      100% { opacity: 0.6; }
+    }
+    .animated-peak {
+      animation: pulse 4s infinite ease-in-out;
+    }
+  </style>
+
+  <rect width="800" height="600" fill="none" />
+
+  <g id="topo-contours">
+    
+    <path class="topo-line" d="M 450,0 Q 520,80 620,60 T 800,120 L 800,0 Z" />
+    <path class="topo-line" d="M 380,0 Q 480,120 600,90 T 800,190" />
+    <path class="topo-line" d="M 320,0 Q 440,160 580,130 T 780,260" />
+    
+    <path class="topo-line index-line" d="M 270,0 Q 400,200 560,170 T 750,330" />
+    
+    <path class="topo-line" d="M 230,0 Q 370,240 540,210 T 710,390" />
+    <path class="topo-line" d="M 200,0 Q 340,280 520,250 T 680,450" />
+    <path class="topo-line" d="M 180,0 Q 320,320 500,290 T 650,510" />
+    <path class="topo-line" d="M 170,30 Q 300,360 480,330 T 630,570" />
+    
+    <path class="topo-line index-line" d="M 165,70 Q 290,400 460,370 T 610,600" />
+    
+    <path class="topo-line" d="M 170,120 Q 280,440 440,410 T 580,600" />
+    <path class="topo-line" d="M 180,180 Q 280,480 420,450 T 540,600" />
+    <path class="topo-line" d="M 200,240 Q 290,520 400,490 T 490,600" />
+    
+    
+    <path class="topo-line" d="M 0,150 Q 120,130 150,220 T 50,350 Z" />
+    <path class="topo-line" d="M 0,180 Q 90,160 120,220 T 30,320 Z" />
+    <path class="topo-line index-line" d="M 0,210 Q 70,190 90,220 T 10,290 Z" />
+    <path class="topo-line" d="M 0,240 Q 50,220 60,230 T 0,260 Z" />
+
+
+    <path class="topo-line index-line" d="M 240,310 C 270,550 420,530 360,430 C 320,350 220,210 240,310 Z" />
+    <path class="topo-line" d="M 265,330 C 290,510 390,500 350,420 C 315,360 250,250 265,330 Z" />
+    <path class="topo-line" d="M 285,350 C 300,470 370,470 340,410 C 310,360 275,290 285,350 Z" />
+    <path class="topo-line" d="M 300,380 C 310,440 350,440 330,400 C 310,370 295,330 300,380 Z" />
+    <path class="topo-line animated-peak" d="M 312,400 C 315,420 335,420 325,400 C 315,390 310,380 312,400 Z" stroke-dasharray="2,2" />
+
+
+    <path class="topo-line" d="M 0,420 Q 90,430 110,500 T 0,580" />
+    <path class="topo-line" d="M 0,460 Q 60,470 80,510 T 0,550" />
+    <path class="topo-line index-line" d="M 0,500 Q 30,500 40,510 T 0,520" />
+
+  </g>
+</svg>
+
